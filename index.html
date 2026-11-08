@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070b18">
+<meta name="description" content="Formula Guessr — JEE formula recall practice for Mathematics, Physics and Chemistry.">
+<title>Formula Guessr — Recall Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" onerror="this.onerror=null;this.href='https://unpkg.com/katex@0.16.11/dist/katex.min.css'">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div id="glyph-field" aria-hidden="true"></div><div id="cursor-glow" aria-hidden="true"></div>
+<div class="app-shell">
+<aside class="sidebar"><a class="brand" href="#home"><span class="brand-mark">F<span>G</span></span><span><b>formula<span>guessr</span></b><small>THE RECALL STUDIO</small></span></a>
+<div class="side-label">WORKSPACE</div><nav><button class="nav-link active" data-view="home"><i>⌂</i>Overview</button><button class="nav-link" data-view="practice"><i>◉</i>Practice arena</button><button class="nav-link" data-view="flashcards"><i>▤</i>Flashcards</button><button class="nav-link" data-view="library"><i>▥</i>Formula library</button></nav>
+<div class="side-label subject-label">SUBJECTS</div><nav class="subject-nav"><button class="subject-link" data-pick-subject="mathematics"><span class="dot math-dot"></span>Mathematics <small>∑</small></button><button class="subject-link" data-pick-subject="physics"><span class="dot physics-dot"></span>Physics <small>⌁</small></button><button class="subject-link" data-pick-subject="chemistry"><span class="dot chemistry-dot"></span>Chemistry <small>⚗</small></button></nav>
+<div class="sidebar-bottom"><div class="sidebar-badge"><span>✦</span><b>Built for deep recall</b><p>Three difficulty levels. Three JEE subjects. One growing formula bank.</p></div><div class="sidebar-status"><i></i> Runs locally in your browser</div></div></aside>
+<div class="main-column"><header class="topbar"><div class="mobile-brand"><span class="brand-mark">F<span>G</span></span><b>formula<span>guessr</span></b></div><div class="crumb"><span>JEE PREPARATION</span><b>/</b><strong>RECALL STUDIO</strong></div><div class="top-right"><span class="live-pill"><i></i> ALL SYSTEMS READY</span><span class="top-symbol">∴</span><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode"><span class="theme-symbol">☼</span><span class="theme-label">Light mode</span></button></div></header><main id="app-main" tabindex="-1"></main><footer><span>FORMULA GUESSR <i>✦</i> JEE RECALL STUDIO</span><span>Maths · Physics · Chemistry</span></footer></div></div>
+<nav class="mobile-nav"><button data-view="home">⌂<small>Home</small></button><button data-view="practice">◉<small>Practice</small></button><button data-view="flashcards">▤<small>Cards</small></button><button data-view="library">▥<small>Library</small></button></nav>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" onerror="this.onerror=null;this.src='https://unpkg.com/katex@0.16.11/dist/katex.min.js'"></script>
+<script defer src="math-bank.js"></script><script defer src="extra-bank.js"></script><script defer src="app.js"></script>
+</body></html>
